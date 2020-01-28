@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+		html, body, * {
+  margin: 0 auto;
+}
+
+#background {
+  padding: 0 auto;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  background: rgb(127,127,127);
+  background: -moz-linear-gradient(top,  rgba(127,127,127,1) 0%, rgba(43,43,43,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(127,127,127,1) 0%,rgba(43,43,43,1) 100%);
+  background: linear-gradient(to bottom,  rgba(127,127,127,1) 0%,rgba(43,43,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f7f7f', endColorstr='#2b2b2b',GradientType=0 );
+}
+
+#clickbtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 125px;
+  color: white;
+  background-color: #444444;
+  font-size: 15px;
+  font-family: verdana;
+  box-shadow: 0px 0px 6px #444;
+  border: 1px solid black;
+}
+
+#clickbtn:hover {
+  background-color: #222222;
+  box-shadow: 0px 0px 11px #00ddff;
+}
+
+p {
+  font-size: 10px;
+  font-family: verdana;
+  color: white;
+}
+#text {
+  font-size: 10px;
+  font-family: verdana;
+  color: white;
+}
+	</style>>
+</head>
+<script src="script.js"></script>
+<body onload="loadPage();">
+<div id="background" onload="loadPage();">
+	<table>
+	<th>
+		<center>
+    	<button id="clickbtn" onclick="clickBtn()">Click</button><br><br><br>
+    	<p id ="score">Clicks: 0</p>
+    	<button id="clickbtn" onclick="clickBtn1()">Click</button><br><br><br>
+    	<p id ="score">Clicks: 0</p>
+	</th>
+	<th>
+		<table>
+    	<tr>
+    		<th><s1 id="text">300</s1></th><th><button id="clickbtn" onclick="S1()">Click</button></th>
+    	</tr>
+    	<tr>
+    		<th><s2 id="text">300</s2></th><th><button id="clickbtn" onclick="S2()">Click</button></th>
+    	</tr>
+    	<tr>
+    		<th><s3 id="text">300</s3></th><th><button id="clickbtn" onclick="S3()">Click</button></th>
+    	</tr>
+    	<tr>
+    		<th><s4 id="text">300</s4></th><th><button id="clickbtn" onclick="S4()">Click</button></th>
+    	</tr>
+    	<tr>
+    		<th><s5 id="text">300</s5></th><th><button id="clickbtn" onclick="S5()">Click</button></th>
+    	</tr>
+
+    </table>
+	</th>
+	</table>
+  
+    
+
+</center>
+  </center>
+</div>
+</body>
+</html>
