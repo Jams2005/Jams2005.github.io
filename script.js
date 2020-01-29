@@ -1,7 +1,10 @@
 var score = 0;
 var auto = 0;
-var s1 = 10;
 var cost1 = 300;
+var cost2 = 1000;
+var cost3 = 3000;
+var cost4 = 10000;
+var cost5 = 50000;
 function updText() {
   document.getElementsByTagName("p")[0].firstChild.data = "Money: " + score;
   document.getElementsByTagName("p")[1].firstChild.data = "Auto: " + auto;
@@ -19,15 +22,50 @@ function clickBtn() {
 function cps() {
   score = score + auto;
   updText();
+
 }
-function S1() {
-  if (cost1 < score ){
-    score = score - cost1;
-    cost1 = cost1 + 10;
-    auto = auto + s1;
-    updText()
-}
-}
+function shop(s) {
+    if (s == 1){
+      if (cost1<score || score == cost1){
+      auto = 10 + auto;
+      score = score - cost1;
+      cost1 = cost1 + 10;
+      updText();
+      }
+    }
+    if (s == 2){
+      if (cost2<score || score == cost2){
+      auto = 30 + auto;
+      score = score - cost2;
+      cost3 = cost3 + 10;
+      updText();
+      }
+    }    
+    if (s == 3){
+      if (cost4<score || score == cost4){
+      auto = 100 + auto;
+      score = score - cost4;
+      cost4 = cost4 + 10;
+      updText();
+      }
+    }    
+    if (s == 4){
+      if (cost4<score || score == cost4){
+      auto = 300 + auto;
+      score = score - cost4;;
+      cost4 = cost4 + 10;
+      updText();
+      }
+    }    
+    if (s == 5){
+      if (cost5<score || score == cost5){
+      auto = 1000 + auto;
+      score = score - cost5;
+      cost5 = cost5 + 10;
+      updText();
+      }
+    }
+  }
 
 setInterval(cps, 1000);
 
