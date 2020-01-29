@@ -16,7 +16,6 @@ function updText() {
 }
 function clickBtn() {
   score++;
-  console.log(score);
   updText();
 }
 function cps() {
@@ -29,7 +28,7 @@ function shop(s) {
       if (cost1<score || score == cost1){
       auto = 10 + auto;
       score = score - cost1;
-      cost1 = cost1 + 10;
+      cost1 = cost1 + 20;
       updText();
       }
     }
@@ -37,7 +36,7 @@ function shop(s) {
       if (cost2<score || score == cost2){
       auto = 30 + auto;
       score = score - cost2;
-      cost3 = cost3 + 10;
+      cost3 = cost3 + 60;
       updText();
       }
     }    
@@ -45,7 +44,7 @@ function shop(s) {
       if (cost4<score || score == cost4){
       auto = 100 + auto;
       score = score - cost4;
-      cost4 = cost4 + 10;
+      cost4 = cost4 + 200;
       updText();
       }
     }    
@@ -53,7 +52,7 @@ function shop(s) {
       if (cost4<score || score == cost4){
       auto = 300 + auto;
       score = score - cost4;;
-      cost4 = cost4 + 10;
+      cost4 = cost4 + 600;
       updText();
       }
     }    
@@ -61,7 +60,7 @@ function shop(s) {
       if (cost5<score || score == cost5){
       auto = 1000 + auto;
       score = score - cost5;
-      cost5 = cost5 + 10;
+      cost5 = cost5 + 2000;
       updText();
       }
     }
